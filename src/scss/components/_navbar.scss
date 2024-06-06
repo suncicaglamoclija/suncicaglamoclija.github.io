@@ -4,16 +4,16 @@
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: $white;
+    background-color: $black;
 
     .navbar-toggler {
-        font-size: 80%;
-        padding: 0.75rem;
-        color: $primary;
-        border: $border-width solid $primary;
+        color: $white;
+        border: none;
+        opacity: 0.8;
 
         &:focus {
             outline: none;
+            box-shadow: none;            
         }
     }
 
@@ -66,14 +66,14 @@
         }
 
         &.navbar-shrink {
-            background-color: $white;
+            background-color: $black;
 
             .navbar-brand {
-                color: $black;
+                color: $white;
             }
 
             .nav-link {
-                color: $black;
+                color: $white;
                 padding: 1.5rem 1.5rem 1.25rem;
                 border-bottom: 0.25rem solid transparent;
 
