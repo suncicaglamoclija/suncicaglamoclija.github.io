@@ -6,12 +6,15 @@ html(lang='en')
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='author', content='')        
 
         title Lawyer Sunčica Glamočlija
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
+        
+        link(rel='apple-touch-icon', sizes='180x180', href='/dist/assets/apple-touch-icon.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='/dist/assets/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='/dist/assets/favicon-16x16.png')
+        link(rel='manifest', href='/site.webmanifest')
+  
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
 
@@ -106,7 +109,7 @@ html(lang='en')
                 .row.gx-4.gx-lg-5
                     .col-md-10.col-lg-8.mx-auto.text-center
                         i.far.fa-envelope.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
+                        h2.text-white.mb-5 Law is complicate matter. It can cause you a big problem if you ignore it. Let us help you! 
 
                         // * * * * * * * * * * * * * * *
                         // * * SB Forms Contact Form * *
@@ -117,44 +120,8 @@ html(lang='en')
                         // https://startbootstrap.com/solution/contact-forms
                         // to get an API token!
                         
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
+                        
+                        a#submitButton.btn.btn-primary(href='mailto:suncica.glamoclija@gmail.com') Contact Us                        
 
         // Contact
         section#contact.contact-section.bg-black
@@ -174,7 +141,7 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
+                                    a(href='mailto:suncica.glamoclija@gmail.com') suncica.glamoclija@gmail.com
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -197,9 +164,6 @@ html(lang='en')
         // Core theme JS
         script(src='dist/js/scripts.js')
 
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        
+        
+        
